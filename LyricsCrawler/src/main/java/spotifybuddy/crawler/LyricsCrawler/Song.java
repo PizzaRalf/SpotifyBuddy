@@ -12,7 +12,7 @@ import java.util.LinkedList;
 public class Song {
 
 	private String title, artist;
-	private LinkedList<Lyrics> availableLyrics;
+	// private LinkedList<Lyrics> availableLyrics;
 
 	/**
 	 * Constructor
@@ -25,25 +25,11 @@ public class Song {
 		this.artist = artist;
 	}
 
-	/**
-	 * Stores an Object of type Lyrics in this dataset
-	 * 
-	 * @param data
-	 *            Lyrics object
-	 */
-	public void addLyrics(Lyrics data) {
-		this.availableLyrics.add(data);
+	public String getTitle() {
+		return title;
 	}
 
-	/**
-	 * Checks if there is any entry for lyrics in this Object
-	 * 
-	 * @return true if lyrics are available for this song
-	 */
-	public boolean hasLyrics() {
-		if (!availableLyrics.isEmpty())
-			return true;
-		else
-			return false;
+	public String getArtist() {
+		return artist;
 	}
 }

@@ -20,4 +20,10 @@ public class Lyrics {
 		this.content = content;
 		this.sourceID = webSourceID;
 	}
+	
+	@Override
+	public String toString() {
+		return content;
+		
+	}
 }
